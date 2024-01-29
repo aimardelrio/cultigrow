@@ -3,7 +3,7 @@ $(document).ready(function () {
     $("#index").show();
   
     // Maneja los clics en los enlaces de navegación
-    $("nav a").click(function (e) {
+    $("nav .misma").click(function (e) {
       e.preventDefault();
       var targetPageID = $(this).attr("href");
      
