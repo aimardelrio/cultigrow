@@ -26,6 +26,7 @@ if (isset($_POST['user'])) {
 
     if ($result->num_rows) {
       $error = "El usuario ya existe";
+      echo"$error";
     }
     else {
       queryMysql("INSERT INTO members(user,password) VALUES('$user', '$pass')");
